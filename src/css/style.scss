@@ -13,6 +13,14 @@ img {
     width: 100%;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
 .container {
     padding: 2vw;
 }
@@ -22,11 +30,6 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
 }
 
 .intro {
@@ -39,7 +42,9 @@ img {
 
     h1 {
         font-size: 4vw;
+        line-height: 5vw;
         margin-bottom: 2vw;
+        text-align: center;
     }
 
     h2 {
@@ -80,16 +85,10 @@ img {
         width: 60%;
         margin-bottom: 20px;
 
-        a {
-            color: black;
-        }
-
         h2 {
             padding: 1vw;
         }
-
     }
-
 }
 
 .post {
@@ -116,10 +115,6 @@ img {
     p {
         padding-bottom: 1vw; 
     }
-
-    a {
-        color: black;
-    }
 }
 
 .contacts {
@@ -136,13 +131,18 @@ img {
 
     &-entries {
         width: 70%;
+        display: flex;
+
+        &-item {
+            padding-right: 5vw;
+        }
+    }
+
+    &-links {
+        width: 70%;
     }
 
     p {
         padding-bottom: 1vw; 
-    }
-
-    a {
-        color: black;
     }
 }

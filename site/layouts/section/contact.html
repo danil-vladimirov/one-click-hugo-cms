@@ -17,14 +17,14 @@
 
 		<div class="contacts-entries">
 			{{ range .Params.contact_entries }}
-				<div>
+				<div class="contacts-entries-item">
 					<h4>{{ .heading }}</h4>
 					<p>{{ .text }}</p>
 				</div>
 			{{ end }}
 		</div>
 
-		<div class="contacts-entries">
+		<div class="contacts-links">
 			{{ range .Params.links }}
 				<div>
 					<a href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>

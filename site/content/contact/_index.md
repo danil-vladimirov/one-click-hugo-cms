@@ -9,7 +9,8 @@ contact_entries:
 links:
   - title: Github repository
     link: "https://github.com/danil-vladimirov/bhsad-webspace-hugo-netlify-cms"
+  - title: Hugo documentation
+    link: "https://gohugo.io/templates/"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback is valuable for us.
+This website is built using Hugo, it hosts on Netlify and manages by Netlify CMS. Follow [this link](https://github.com/danil-vladimirov/bhsad-webspace-hugo-netlify-cms) to check the source code.
