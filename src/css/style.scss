@@ -5,174 +5,144 @@
 
 body {
     background-color: #AEAEAE;
-    font-family: "MADE Sunflower";
-
-    @media (min-width: 550px) {
-        background-color: burlywood;
-    }
+    font-family: "MADE-Sunflower";
+    font-size: 1.3vw;
 }
 
 img {
     width: 100%;
 }
 
-.container {
-    padding: 20px;
+a {
+    color: black;
 }
 
-.top {
-    height: 300px;
+a:hover {
+    color: blue;
+}
+
+.container {
+    padding: 2vw;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro {
+    height: 20vw;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     h1 {
-        color: red;
-        font-size: 36px;
-        transform: rotateZ(15deg);
+        font-size: 4vw;
+        line-height: 5vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
 
-        @media (min-width: 550px) {
-            font-size: 4vw;
+    h2 {
+        font-size: 2vw;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-image {
+        width: 80%;
+    }
+
+    &-text {
+        text-align: center;
+        padding: 2vw;
+        margin-bottom: 2vw;
+
+        h2 {
+            font-size: 2vw;
+            margin-bottom: 2vw;
         }
     }
 }
 
 .gallery {
-    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    text-align: center;
 
-    @media (min-width: 550px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    &-top-image {
-        width: 100%;
+    &-item {
+        width: 60%;
         margin-bottom: 20px;
 
-        @media (min-width: 550px) {
-            width: 49%;
-            clip-path: polygon(36% 23%, 77% 39%, 68% 94%, 27% 77%, 42% 59%, 16% 41%);
+        h2 {
+            padding: 1vw;
         }
-    }
-
-    &-top-image:hover {
-
-        @media (min-width: 550px) {
-            clip-path: polygon(9% 5%, 96% 10%, 91% 85%, 64% 76%, 17% 88%, 3% 52%);
-        }
-    }
-
-    &-second-images {
-        display: flex;
-        justify-content: space-between;
-
-        @media (min-width: 550px) {
-            width: 49%;
-        }
-    }
-
-    &-second-image-s {
-        width: 36%;
-    }
-
-    &-second-image-m {
-        width: 60%;
     }
 }
 
-.about {
-    width: 100%;
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5vw;
+    line-height: 2vw;
+
+    &-intro {
+        width: 70%;
+    }
+
+    &-content {
+        width: 70%;
+    }
+
+    img {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
 
     p {
-        font-size: 17px;
-        line-height: 126%;
-
-        @media (min-width: 550px) {
-            font-size: 4vw;
-            line-height: 5vw;
-        }
+        padding-bottom: 1vw; 
     }
 }
 
 .contacts {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-
-    &-headline {
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h2 {
-            color: red;
-            font-size: 36px;
-            transform: rotateZ(15deg);
-
-            @media (min-width: 550px) {
-                font-size: 4vw;
-            }
-        }
-    }
-
-    &-buttons {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-        @media (min-width: 550px) {
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    }
-
-    &-button {
-        background-color: yellow;
-        border: 1px solid black;
-        border-radius: 18px;
-        padding: 22px;
-        margin-bottom: 20px;
-        font-size: 24px;
-        text-align: center;
-        color: black;
-
-        @media (min-width: 550px) {
-            margin: 1vw;
-            width: 25vw;
-            font-size: 3vw;
-        }
-    }
-
-    &-button:hover {
-        opacity: 0.5;
-    }
-}
-
-.check-this {
-    background-color: rgb(203, 186, 156);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 500px;
-    right: 300px;
-    box-shadow: 0px 4px 14px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5vw;
+    line-height: 2vw;
 
-    a {
-        text-decoration: none;
-        color: black;
+    &-intro {
+        width: 70%;
+    }
+
+    &-entries {
+        width: 70%;
+        display: flex;
+
+        &-item {
+            padding-right: 5vw;
+        }
+    }
+
+    &-links {
+        width: 70%;
+    }
+
+    p {
+        padding-bottom: 1vw; 
     }
 }
