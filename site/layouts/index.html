@@ -11,7 +11,7 @@
 
     <div class="content">
         <div class="content-image">
-            <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+            <img src="{{ .Params.image }}" />
         </div>
         <div class="content-text">
             <h2>{{.Params.intro.heading}}</h2>
@@ -23,7 +23,7 @@
         {{ range .Paginator.Pages.ByPublishDate.Reverse }}
             <div class="gallery-item">
                 <a href="{{ .RelPermalink }}">
-                    <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+                    <img src="{{ .Params.image }}" />
                     <h2>{{ .Title }}</h2>
                     <p>{{ .Date.Format "2006" }}</p>
                 </a>
